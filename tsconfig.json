@@ -2,7 +2,7 @@
   "compilerOptions": {
     "module": "nodenext",
     "target": "es2020",
-    "types": ["node"],
+    "types": ["node", "vitest"],
 
     "sourceMap": true,
     "declaration": true,
