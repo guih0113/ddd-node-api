@@ -2,7 +2,11 @@
   "compilerOptions": {
     "module": "nodenext",
     "target": "es2020",
-    "types": ["node", "vitest"],
+    "types": ["node", "vitest/globals"],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
 
     "sourceMap": true,
     "declaration": true,
