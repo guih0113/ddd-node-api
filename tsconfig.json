@@ -15,7 +15,6 @@
     "noUncheckedIndexedAccess": true,
 
     "strict": true,
-    "jsx": "react-jsx",
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
