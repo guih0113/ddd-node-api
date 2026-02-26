@@ -33,7 +33,8 @@
         "useExhaustiveDependencies": "off"
       },
       "suspicious": {
-        "noArrayIndexKey": "off"
+        "noArrayIndexKey": "off",
+        "noEmptyInterface": "off"
       },
       "style": {
         "useImportType": "off",
