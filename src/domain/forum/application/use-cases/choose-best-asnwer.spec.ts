@@ -48,7 +48,7 @@ describe('Choose Best Answer for a question', () => {
     await inMemoryQuestionsRepository.create(question)
     await inMemoryAnswersRepository.create(answer)
 
-    expect(() => {
+    await expect(() => {
       return sut.execute({
         authorId: 'author-2',
         answerId: 'answer-1'

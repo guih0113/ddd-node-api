@@ -33,7 +33,7 @@ describe('Edit Question', () => {
     })
   })
 
-  it('should not be able to edit a question from another user', () => {
+  it('should not be able to edit a question from another user', async () => {
     const newQuestion = makeQuestion(
       { authorId: new UniqueEntityId('author-1') },
       new UniqueEntityId('question-1')
@@ -41,7 +41,7 @@ describe('Edit Question', () => {
 
     inMemoryQuestionsRepository.create(newQuestion)
 
-    expect(() => {
+    await expect(() => {
       return sut.execute({
         authorId: 'author-2',
         questionId: 'question-1',

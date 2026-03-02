@@ -31,7 +31,7 @@ describe('Edit Answer', () => {
     })
   })
 
-  it('should not be able to edit a answer from another user', () => {
+  it('should not be able to edit a answer from another user', async () => {
     const newAnswer = makeAnswer(
       { authorId: new UniqueEntityId('author-1') },
       new UniqueEntityId('answer-1')
@@ -39,7 +39,7 @@ describe('Edit Answer', () => {
 
     inMemoryAnswersRepository.create(newAnswer)
 
-    expect(() => {
+    await expect(() => {
       return sut.execute({
         authorId: 'author-2',
         answerId: 'answer-1',
