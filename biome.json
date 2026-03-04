@@ -43,6 +43,9 @@
       "a11y": {
         "noSvgWithoutTitle": "off"
       },
+      "complexity": {
+        "noBannedTypes": "off"
+      },
       "recommended": true
     }
   },
